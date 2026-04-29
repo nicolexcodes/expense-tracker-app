@@ -1,4 +1,4 @@
-from tracker import add_expense, view_expense, get_total
+from tracker import add_expense, view_expenses, get_total
 
 def menu():
   print("\nExpense Tracker")
