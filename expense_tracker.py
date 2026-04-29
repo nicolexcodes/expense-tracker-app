@@ -1,4 +1,4 @@
-expenses = []
+from tracker import add_expense, view_expense, get_total
 
 def menu():
   print("\nExpense Tracker")
@@ -14,19 +14,19 @@ while True:
   if choice == "1":
     name = input("Enter expense name: ")
     amount = float(input("Enter amount: "))
-    expenses.append((name, amount))
+    add_expense(name, amount)
     print("Expense added.")
 
   elif choice == "2":
+    expenses = view_expenses()
     if not expenses:
       print("No expenses recorded.")
     else:
-      for item in expenses:
-        print(f"{item[0]} - ${item[1]:.2f}")
+      for exp in expenses:
+        print(f"{exp['name']} - ${exp['amount']:.2f}")
 
   elif choice == "3":
-    total = sum(item[1] for item in expenses)
-    print(f"Total Spending: ${total:.2f}")
+    print(f"Total Spending: ${get_total():.2f}")
 
   elif choice == "4":
     print("Goodbye!")
