@@ -1,21 +1,20 @@
-# Expense Tracker App
+# Expense Tracker (Python CLI App)
 
-A Python command-line application that helps users record expenses and track total spending.
+## Description
+A command-line Python application that lets users track expenses and view total spending. Data is saved using JSON so it persists between sessions.
 
 ## Features
-- Add new expenses with names and amounts
-- View all recorded expenses
-- Calculate total spending automatically
-- Interactive menu system
+- Add expenses with name and amount
+- View all expenses
+- View total spending
+- Persistent storage using JSON
 
-## Skills Used
+## Tech Used
 - Python
-- Lists / Tuples
-- Loops
-- Functions
-- User Input
-- Conditional Logic
-- Number Formatting
+- File handling (JSON)
+- Modular programming
 
-## Why I Built This
-Created to strengthen Python programming skills while building a practical financial tracking tool. This project demonstrates core software engineering concepts such as data handling, user interaction, and structured program flow.
+## What I Learned
+- How to structure a multi-file Python project
+- How to store persistent data
+- How to organize code into modules
